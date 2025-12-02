@@ -1,0 +1,11 @@
+package com.ahmedworkspace.casahub.listing.application.dto;
+
+import com.ahmedworkspace.casahub.booking.application.dto.BookedDateDTO;
+import com.ahmedworkspace.casahub.listing.application.dto.sub.ListingInfoDTO;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+
+public record SearchDTO(@Valid BookedDateDTO dates,
+                        @Valid ListingInfoDTO infos,
+                        @NotEmpty String location) {
+}

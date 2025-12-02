@@ -1,0 +1,56 @@
+logging:
+  level:
+    ROOT: INFO
+    org.hibernate.SQL: DEBUG
+    com.ahmedworkspace.casahub: DEBUG
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: casahub-back
+  datasource:
+    username: postgres
+    password: Ahmed@#2003
+    url: jdbc:postgresql://localhost:5432/bookingApp?currentSchema=casahub
+    #driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: deferred
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: casahub
+  liquibase:
+    contexts: dev
+    change-log: classpath:db/changelog/master.xml
+    default-schema: casahub
+    enabled: true
+    parameters:
+      uuidType: uuid
+  #    drop-first: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+server:
+  port: 8080
+
+okta:
+  oauth2:
+    issuer: https://dev-1hmed-ch.us.auth0.com/
+    client-id: TTcBE88iu363RiqzEsCuudJUqxj5V0QP
+    client-secret: V8suxSBtWiBBkEXI_BXb2JFMqNGk3RUNRuYOXJoQrm4tNovir98WyDLsPM8r0qU4
+
+application:
+  auth0:
+    role-landlord-id: rol_lJZqSW1rRopx2RVF
