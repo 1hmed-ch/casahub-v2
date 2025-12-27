@@ -1,12 +1,110 @@
-<div class="footer text-sm border-solid border-1 border-200 flex
-justify-content-start align-items-center px-6 py-5">
-  <span>© 2024 Codecake, Inc.</span>
-  <fa-icon icon="circle"></fa-icon>
-  <span>Terms</span>
-  <fa-icon icon="circle"></fa-icon>
-  <span>Sitemap</span>
-  <fa-icon icon="circle"></fa-icon>
-  <span>Privacy</span>
-  <fa-icon icon="circle"></fa-icon>
-  <span>Your privacy choices</span>
+<div class="footer bg-gray-50 border-top-1 border-gray-200 mt-8">
+  <!-- Main Footer Content -->
+  <div class="px-6 py-8">
+    <div class="flex justify-content-between align-items-start mb-6">
+      <!-- Logo -->
+      <div class="flex align-items-center">
+        <img src="./assets/images/logo1.png" alt="CasaHub Logo" class="h-10 w-10">
+        <div class="font-bold text-primary pl-2 text-2xl">CasaHub</div>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="flex gap-4">
+        <a href="#" class="text-gray-600 hover:text-gray-900">
+          <fa-icon [icon]="['fab', 'facebook']" size="xl"></fa-icon>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-gray-900">
+          <fa-icon [icon]="['fab', 'twitter']" size="xl"></fa-icon>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-gray-900">
+          <fa-icon [icon]="['fab', 'instagram']" size="xl"></fa-icon>
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center lg:text-left max-w-full">
+
+      <!-- Support Section -->
+      <div class="footer-section">
+        <h3 class="font-bold text-lg mb-4 text-gray-900">Support</h3>
+        <ul class="list-none p-0 m-0">
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Help Center</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">AirCover</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Safety information</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Supporting people with disabilities</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Cancellation options</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Report a concern</a></li>
+        </ul>
+      </div>
+
+      <!-- Hosting Section -->
+      <div class="footer-section">
+        <h3 class="font-bold text-lg mb-4 text-gray-900">Hosting</h3>
+        <ul class="list-none p-0 m-0">
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">CasaHub your home</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">AirCover for Hosts</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Hosting resources</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Community forum</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Hosting responsibly</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Join a free Hosting class</a></li>
+        </ul>
+      </div>
+
+      <!-- CasaHub Section -->
+      <div class="footer-section">
+        <h3 class="font-bold text-lg mb-4 text-gray-900">CasaHub</h3>
+        <ul class="list-none p-0 m-0">
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Newsroom</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">New features</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Careers</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Investors</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Gift cards</a></li>
+        </ul>
+      </div>
+
+      <!-- About Section -->
+      <div class="footer-section">
+        <h3 class="font-bold text-lg mb-4 text-gray-900">About</h3>
+        <ul class="list-none p-0 m-0">
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">About us</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Our mission</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Partnerships</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Trust & Safety</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-700 hover:underline no-underline">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-top-1 border-gray-200 bg-white">
+    <div class="px-6 py-4">
+      <div class="flex flex-column md:flex-row justify-content-between align-items-center gap-3">
+
+        <!-- Left side - Copyright & Links -->
+        <div class="flex flex-wrap align-items-center justify-content-center md:justify-content-start gap-3 text-sm text-gray-600">
+          <span>© 2024 CasaHub, Inc.</span>
+          <span class="hidden md:inline">·</span>
+          <a href="#" class="text-gray-600 hover:underline no-underline">Terms</a>
+          <span class="hidden md:inline">·</span>
+          <a href="#" class="text-gray-600 hover:underline no-underline">Sitemap</a>
+          <span class="hidden md:inline">·</span>
+          <a href="#" class="text-gray-600 hover:underline no-underline">Privacy</a>
+          <span class="hidden md:inline">·</span>
+          <a href="#" class="text-gray-600 hover:underline no-underline">Your Privacy Choices</a>
+        </div>
+
+        <!-- Right side - Language & Currency -->
+        <div class="flex align-items-center justify-content-center md:justify-content-end gap-4">
+          <button class="p-button p-button-text text-gray-600 p-2">
+            <fa-icon icon="globe" class="mr-2"></fa-icon>
+            <span class="font-semibold">English (US)</span>
+          </button>
+          <button class="p-button p-button-text text-gray-600 p-2">
+            <span class="font-semibold">$ USD</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
